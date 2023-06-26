@@ -3,10 +3,29 @@ server:
 spring:
   application:
     name: habit
+  jackson:
+    date-format: yyyy-MM-dd
+  datasource:
+    url: jdbc:postgresql://localhost:5432/intership
+    username: sam
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
 logging:
   level:
     com:
