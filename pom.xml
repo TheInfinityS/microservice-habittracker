@@ -11,6 +11,7 @@
     <modules>
         <module>eureko-server</module>
         <module>habit</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
