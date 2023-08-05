@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="c7c22fcf-8e11-483d-af70-253aee20e011">
-      <console name="Connection" type="STANDARD" schema="internship" session="Main"><![CDATA[select * from public.habit;]]></console>
+      <console name="Connection" type="STANDARD" schema="internship" session="Main"><![CDATA[select * from public.usr;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

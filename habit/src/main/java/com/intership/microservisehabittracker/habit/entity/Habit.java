@@ -1,5 +1,6 @@
 package com.intership.microservisehabittracker.habit.entity;
 
+import com.intership.microservisehabittracker.user.entity.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -31,6 +32,9 @@ public class Habit {
 
     private LocalDate endDate;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User profile;
 
     @ElementCollection
     private Map<LocalDate,Integer> habitData;
